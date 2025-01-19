@@ -1,0 +1,634 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+/* Home Page */
+header {
+    width: 100%;
+    height: 92px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 0 20px;
+    z-index: 1000;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+li:hover{
+    color: rgb(233,70,21);
+    transition: 0.4s;
+}
+.burger-menu {
+    display: none;
+}
+.brand-area h4 {
+    font-size: 20px;
+    letter-spacing: 6px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.brand-area span {
+    color: rgb(233, 70, 21);
+}
+.brand-area p{
+    font-size: 16px;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 70px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    left: 40px;
+}
+.overlay a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+.ph-number{
+    font-weight: bold;
+    font-size: 20px;
+}
+.image-area{
+    min-height: 553px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 300px;
+    margin: 0px 30px;
+}
+.image-area h1{
+    font-size: 90px;
+    line-height: 90px;
+    font-weight: bold;
+}
+.mini-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 60px;
+}
+.mini-box{
+    height: 183px;
+    width: 250px;
+    color: black;
+    font-size: 23px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.fix{
+    width: 1459px;
+    height: 365px;
+    background-color: rgb(237,237,237);
+    text-align: center;
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.fix h2{
+    font-size: 42px;
+}
+.fix button{
+    padding: 11px 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: rgb(233,70,21);
+    color: white;
+    border: none;
+}
+.fix button:hover{
+    color: black;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.partners{
+    height: 219px;
+    margin: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.mb{
+    display: flex;
+    gap: 80px;
+}
+.interest{
+    background-color: rgb(51,51,51);
+    color: white;
+    height: 242px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 0px 30px;
+}
+.interest h3{
+    font-size: 42px;
+}
+.interest button{
+    padding: 10px 50px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: none;
+    background-color: white;
+    color: rgb(51,51,51);
+    cursor: pointer;
+}
+.interest button:hover{
+    color: rgb(233,70,21);
+    transition: 0.4s;
+}
+footer{
+    height: 400px;
+    background-color: rgb(17,17,17);
+    color: rgb(214,214,214);
+    margin: 0px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 170px;
+}
+.mini-footer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mini-footer i{
+    color: white;
+}
+.mini-footer h6{
+    font-size: 20px;
+}
+.socials{
+    display: flex;
+    gap: 10px;
+}
+/* Services page */
+.title{
+    min-height: 300px;
+    color: white;
+    text-align: center;
+    margin: 0px 30px;
+}
+.title h1{
+    margin-top: -150px;
+    font-size: 70px;
+    font-weight: bold;
+}
+.services{
+    height: 681px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.mini-service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+.mini-service h3{
+    font-size: 70px;
+    color: rgb(233,70,21);
+}
+.mini-service h5{
+    font-size: 20px;
+}
+.p-serv{
+    display: flex;
+    gap: 150px;
+}
+.call{
+    height: 131px;
+    margin: 0px 30px;
+    background-color: rgb(237,237,237);
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.call h3{
+    font-size: 28px;
+}
+.call button{
+    padding: 11px 40px;
+    background-color: rgb(233,70,21);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+.call button:hover{
+    color: black;
+    transition: 0.5s;
+}
+/* Products Page */
+.all-products{
+    height: 1600px;
+    margin: 0px 30px;
+    padding-top: 50px;
+}
+.all-products h2{
+    font-size: 40px;
+    margin-left: 100px;
+}
+.pair-of-products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+.product{
+    display: flex;
+}
+.tab {
+    float: left;
+    border: none;
+    border: 1px solid #ccc;
+    width: 100px;
+    height: 204px;
+}
+.tab button {
+    display: block;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.tab button:hover {
+    background-color: #ddd;
+}
+.tab button.active {
+    background-color: #ccc;
+}
+.tab button:after {
+    content: none;
+}
+.tabcontent {
+    display: none;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 340px;
+    border-left: none;
+    height: 204px;
+}
+.description table{
+    border-spacing: 15px 3px;
+}
+/* About us page */
+.text{
+    height: 630px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    line-height: 28px;
+    font-weight: lighter;
+    font-size: 17px;
+}
+/* Contact Us Page */
+.contact-us{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 0px 30px;
+    margin-top: 70px;
+    text-align: center;
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+.info1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.info1 i{
+    font-size: 35px;
+}
+.info1 h5{
+    font-size: 20px;
+}
+.sym i{
+    font-size: 25px;
+    margin-right: 14px;
+}
+/* FAQs page */
+.FAQs{
+    margin: 0px 30px;
+    height: 900px;
+    padding: 40px;
+}
+.FAQs h4{
+    font-size: 25px;
+    margin-bottom: 60px;
+    color: black;
+}
+.collapsible {
+    background-color: white;
+    color: rgb(72, 72, 72);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+}
+.content {
+    padding: 20px;
+    display: none;
+    font-size: 17px;
+}
+.collapsible:after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(233,70,21);
+    float: right;
+    margin-left: 10px;
+}
+.active:after {
+    content: '\f106';
+    font-family: 'Font Awesome 5 Free'; 
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(233,70,21);
+    float: right;
+    margin-left: 10px;
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    /* Home Page */
+    .navigation, .ph-number {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .brand-area {
+        display: flex;
+        flex-direction: column;
+    }
+    .brand-area h4 {
+        font-size: 18px;
+    }
+    .burger-menu span {
+        font-size: 36px;
+        color: black;
+        margin-left: 100px;
+    }
+    .overlay a {
+        font-size: 23px;
+    }
+    .overlay .closebtn {
+        font-size: 50px;
+        top: 10px;
+        right: 95px;
+    }
+    .image-area{
+        margin: 0px;
+        width: 100%;
+        padding-top: 200px;
+        height: 1000px;
+    }
+    .image-area h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .mini-boxes{
+        flex-direction: column;
+    }
+    .fix{
+        width: 100%;
+        margin: 0px;
+    }
+    .fix h2{
+        font-size: 30px;
+    }
+    .fix p{
+        font-size: 14px;
+        padding: 0px 60px;
+        line-height: 25px;
+    }
+    .fix button{
+        padding: 8px 20px;
+    }
+    .partners{
+        height: 550px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+    .mb{
+        display: flex;
+        gap: 60px;
+    }
+    .interest{
+        margin: 0px;
+    }
+    .interest h3{
+        font-size: 30px;
+    }
+    .interest button{
+        padding: 8px 30px;
+    }
+    footer{
+        height: 770px;
+        margin: 0px;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .mini-footer{
+        margin-top: 50px;
+        margin-left: 70px;
+    }
+    /* Services Page */
+    .title{
+        margin: 0px;
+    }
+    .title img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover; 
+    }
+    .title h1 {
+        font-size: 40px;
+        margin-top: -100px; 
+    }
+    .services{
+        height: 1630px;
+        gap: 10px;
+        margin: 0px;
+    }
+    .p-serv{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .mini-service1{
+        margin-top: -60px;
+    }
+    .mini-service h3{
+        font-size: 60px;
+    }    
+    .call{
+        height: 140px;
+        margin: 0px;
+        flex-direction: column;
+    }
+    .call h3{
+        font-size: 20px;
+    }
+    /* Products Page */
+    .all-products{
+        height: 6400px;
+        padding-top: 10px;
+    }
+    .all-products h2{
+        font-size: 30px;
+        margin-left: 0px;
+    }
+    .pair-of-products{
+        flex-direction: column;
+        gap: 100px;
+    }
+    .product{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+    }
+    .tab {
+        width: 100%;
+        border: none;
+    }
+    .tab button {
+        padding: 10px;
+    }
+    .tabcontent {
+        width: 100%;
+        border: 1px solid #ccc;
+        margin-top: -113px;
+        padding-top: 15px;
+    }    
+    /* About us Page */
+    .text{
+        height: 1250px;
+        gap: 15px;
+        font-size: 15px;
+        padding: 0px 40px;
+    }    
+    .last-part{
+        margin-bottom: 50px;
+    }
+    /* Contact us Page */
+    .contact-us{
+        height: 1200px;
+        margin: 0px;
+        margin-top: 0px;
+    }
+    .contact-info{
+        flex-direction: column;
+        gap: 70px;
+        padding-bottom: 0px;
+    }
+    .info1 i{
+        font-size: 28px;
+    }
+    .info1 h5{
+        font-size: 20px;
+    }
+    .sym i{
+        font-size: 20px;
+        margin-left: 14px;
+    }
+    /* FAQs Page */
+    .FAQs{
+        height: 925px;
+        padding: 0px;
+    }
+    .FAQs h4{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .collapsible{
+        font-size: 15px;
+    }
+}
