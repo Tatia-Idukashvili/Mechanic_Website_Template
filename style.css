@@ -238,20 +238,21 @@ footer{
     font-weight: bold;
 }
 .services{
-    height: 681px;
+    height: 680px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 70px;
 }
 .mini-service{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
     text-align: center;
+    width: 360px;
+    height: auto;
 }
 .mini-service h3{
     font-size: 70px;
@@ -262,7 +263,7 @@ footer{
 }
 .p-serv{
     display: flex;
-    gap: 150px;
+    gap: 100px;
 }
 .call{
     height: 131px;
