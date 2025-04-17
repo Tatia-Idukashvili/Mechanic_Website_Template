@@ -349,7 +349,7 @@ footer{
 }
 /* About us page */
 .text{
-    height: 630px;
+    height: 300px;
     text-align: center;
     display: flex;
     flex-direction: column;
